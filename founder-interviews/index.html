@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Founder Interview Sprints — Alongi UX Research &amp; Strategy</title>
+<meta name="description" content="Done-for-you customer discovery interviews for founders. 8 interviews, synthesis report, and readout call — delivered in 2 weeks.">
+<link rel="icon" href="../images/portrait.webp" type="image/webp">
+<link rel="stylesheet" href="../assets/site.css">
+<style>
+  :root { --ink: #1b1f24; --muted: #5b6470; --accent: #0f766e; --wash: #f6f8f7; --line: #e5e9e8; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: var(--ink); -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 1.25rem; }
+  header.site { border-bottom: 1px solid var(--line); }
+  header.site .wrap { display: flex; align-items: center; justify-content: space-between; padding-top: 1rem; padding-bottom: 1rem; }
+  .brand { font-weight: 700; letter-spacing: .01em; color: var(--ink); text-decoration: none; font-size: 1.02rem; }
+  .brand:hover { color: var(--ink); }
+  .brand small { display: block; font-weight: 400; color: var(--muted); font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; }
+  .hero { padding: 4.5rem 0 3rem; }
+  .kicker { color: var(--accent); font-weight: 600; font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 1rem; }
+  h1 { font-size: clamp(2rem, 5vw, 2.9rem); line-height: 1.12; letter-spacing: -0.02em; margin-bottom: 1.1rem; }
+  .lede { font-size: 1.18rem; color: var(--muted); line-height: 1.6; margin-bottom: 2rem; max-width: 34em; }
+  .btn-cta { display: inline-block; background: var(--accent); color: #fff; font-weight: 600; padding: .85rem 1.6rem; border-radius: .5rem; text-decoration: none; font-size: 1.02rem; }
+  .btn-cta:hover { color: #fff; filter: brightness(1.08); }
+  .btn-ghost { display: inline-block; margin-left: .9rem; color: var(--ink); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+  section.block { padding: 2.75rem 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 1.45rem; letter-spacing: -0.01em; margin-bottom: 1.25rem; }
+  p, li { line-height: 1.65; }
+  .muted { color: var(--muted); }
+  ul.tight { padding-left: 1.2rem; margin-bottom: 0; }
+  ul.tight li { margin-bottom: .55rem; }
+  ul.tight li::marker { color: var(--accent); }
+  .steps { counter-reset: step; list-style: none; padding: 0; }
+  .steps li { counter-increment: step; position: relative; padding-left: 2.6rem; margin-bottom: 1.4rem; }
+  .steps li::before { content: counter(step); position: absolute; left: 0; top: .1rem; width: 1.7rem; height: 1.7rem; border-radius: 50%; background: var(--wash); border: 1px solid var(--line); color: var(--accent); font-weight: 700; font-size: .85rem; display: flex; align-items: center; justify-content: center; }
+  .steps strong { display: block; margin-bottom: .15rem; }
+  .tiers { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+  @media (min-width: 640px) { .tiers { grid-template-columns: 1fr 1fr; } }
+  .tier { border: 1px solid var(--line); border-radius: .75rem; padding: 1.5rem; background: #fff; }
+  .tier.featured { border-color: var(--accent); box-shadow: 0 6px 24px rgba(15,118,110,.08); }
+  .tier h3 { font-size: 1.05rem; margin-bottom: .35rem; }
+  .tier .price { font-size: 1.7rem; font-weight: 700; letter-spacing: -0.02em; }
+  .tier .was { color: var(--muted); text-decoration: line-through; font-size: 1rem; font-weight: 400; margin-left: .4rem; }
+  .tier p { font-size: .95rem; color: var(--muted); margin: .6rem 0 0; }
+  .flag { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--accent); background: rgba(15,118,110,.1); border-radius: 999px; padding: .2rem .65rem; margin-bottom: .7rem; }
+  .fineprint { font-size: .88rem; color: var(--muted); margin-top: 1.1rem; }
+  .about { display: flex; gap: 1.25rem; align-items: flex-start; }
+  .about img { width: 88px; height: 88px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+  footer.site { border-top: 1px solid var(--line); margin-top: 1rem; }
+  footer.site .wrap { padding-top: 1.75rem; padding-bottom: 2.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .75rem; }
+  footer.site p { margin: 0; font-size: .88rem; color: var(--muted); }
+  .final-cta { text-align: center; padding: 3.5rem 0 4rem; }
+  .final-cta h2 { font-size: 1.7rem; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/">Alongi<small>UX Research &amp; Strategy</small></a>
+    <a class="btn-cta" style="padding:.55rem 1.1rem;font-size:.92rem" href="mailto:tony.alongi@hey.com?subject=Founder%20Interview%20Sprint%20%E2%80%94%20fit%20call">Book a fit call</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <div class="kicker">Founder Interview Sprints</div>
+    <h1>Know what your customers actually want. In 2 weeks.</h1>
+    <p class="lede">Done-for-you customer discovery interviews for founders. You get the insights. You don&rsquo;t do the work.</p>
+    <a class="btn-cta" href="mailto:tony.alongi@hey.com?subject=Founder%20Interview%20Sprint%20%E2%80%94%20fit%20call">Book a free 20-min fit call</a>
+    <a class="btn-ghost" href="#pricing">See pricing</a>
+  </div>
+
+  <section class="block">
+    <div class="wrap">
+      <h2>The problem it solves</h2>
+      <p class="muted">You know you should be talking to customers. But recruiting takes weeks, the interviews eat your calendar, and the notes sit unsynthesized. So big decisions get made on gut feel.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <h2>What you get</h2>
+      <ul class="tight">
+        <li><strong>8 structured 30-minute discovery interviews</strong> with your target customers</li>
+        <li><strong>Recruiting, screening, and scheduling</strong> handled for you</li>
+        <li><strong>A synthesis report</strong> — themes, verbatim quotes, opportunity areas, in plain English, ready to act on</li>
+        <li><strong>A 30-minute readout call</strong> to walk through what it means for your roadmap</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li><strong>Kickoff (30 min)</strong><span class="muted">We define who to talk to and what you need to learn.</span></li>
+        <li><strong>We run it</strong><span class="muted">Interviews recruited, scheduled, and conducted over two weeks.</span></li>
+        <li><strong>Day 14</strong><span class="muted">You get the report and the readout call.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block" id="pricing">
+    <div class="wrap">
+      <h2>Pricing</h2>
+      <div class="tiers">
+        <div class="tier">
+          <h3>Sprint</h3>
+          <div class="price">$750<span class="was">$1,500</span></div>
+          <p>You provide the customer list. I handle outreach, interviews, and synthesis. Founding rate for the first 3 founders.</p>
+        </div>
+        <div class="tier featured">
+          <span class="flag">Most popular</span>
+          <h3>Sprint+</h3>
+          <div class="price">$1,200<span class="was">$2,400</span></div>
+          <p>No list? No problem. I recruit participants for you — screener, sourcing, and scheduling included. Founding rate for the first 3 founders.</p>
+        </div>
+      </div>
+      <p class="fineprint">Participant incentives are billed at cost (typically $50–75 each) and capped in your quote — no surprises.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap about">
+      <img src="../images/portrait.webp" alt="Tony Alongi">
+      <div>
+        <h2 style="margin-bottom:.5rem">Run by a researcher, not a robot</h2>
+        <p class="muted" style="margin:0">I&rsquo;m <strong style="color:var(--ink)">Tony Alongi</strong>, a UX researcher with 12 years of discovery interviews across health tech and digital products. AI-assisted, researcher-led: every interview is run by a human who knows how to follow the thread — the part AI moderators still can&rsquo;t do.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap final-cta">
+    <h2>Stop guessing. Start knowing.</h2>
+    <p class="muted" style="margin-bottom:1.75rem">Free 20-minute fit call — we&rsquo;ll figure out in one conversation whether a sprint makes sense for where you are.</p>
+    <a class="btn-cta" href="mailto:tony.alongi@hey.com?subject=Founder%20Interview%20Sprint%20%E2%80%94%20fit%20call">Book your fit call</a>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>© 2026 Alongi UX Research &amp; Strategy</p>
+    <p><a href="/" style="color:var(--muted)">tonyalongi.xyz</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
